@@ -1,0 +1,93 @@
+.alert {
+  color: red;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: pink;
+}
+
+form {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100px;
+}
+
+/** assignment of grid area names */
+.itemName {
+  grid-area: name;
+}
+.itemPrice {
+  grid-area: price;
+}
+.itemAmount {
+  grid-area: amount;
+}
+.itemSubtotal {
+  grid-area: subtotal;
+}
+
+/** template for grids */
+.itemDiv {
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  grid-template-areas:
+    "name price amount subtotal"
+    "image . add .";
+
+  border-left: thin solid black;
+  border-right: thin solid black;
+  border-top: thin solid black;
+}
+
+.total {
+  font-size: 20pt;
+}
+
+.itemDiv:last-child {
+  border-bottom: thin solid black;
+}
+
+.itemDiv > * {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+img,
+.itemAdd {
+  margin: auto;
+}
+.importantInputs {
+  padding: 50px;
+  margin: auto;
+}
+
+.importantInputs > * {
+  margin-left: 2rem;
+}
+
+label {
+  display: flex;
+  margin: auto;
+  padding: 1em;
+  font-weight: bold;
+  padding-top: 10px;
+}
+fieldset > * {
+  padding: 10px;
+}
+select {
+  margin-bottom: 2em;
+}
+.itemAdd {
+  grid-area: add;
+  padding: px;
+  min-width: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  max-height: 100px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--please note that use of a server or live preview extension is required-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Connor MacNeil">
+    <meta name="email" content="macn0180@algonquinlive.com">
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/validate.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+    <title>Surprise Collector Gifts</title>
+  </head>
+  <body>
+    <h1>Surprise Collector Gifts</h1>
+    <p>
+      This website is about ordering gifts for someone and
+      having them delivered at specific times for maximum effect.
+    </p>
+    <h3>User Profile</h3>
+    <form name="form" id="form">
+      <fieldset id="simple">
+        <label for="text">Name</label>
+        <input type="text" id="name" name="name">
+        <span class="alert" id="nameError"></span>
+
+        <label for="text">Address</label>
+        <input type="text" id="address" name="address">
+        <span class="alert" id="addressError"></span>
+
+        <label for="number">Age</label>
+        <input type="number" id="age" name="age">
+        <span class="alert" id="ageError"></span>
+
+        <label for="date">Target delivery date</label>
+        <input type="date" id="date" name="dateBox">
+        <span class="alert" id="dateError"></span>
+      </fieldset>
+
+      <fieldset id="complex">
+      
+        <label for="dTime">Preferred delivery time</label>
+        <input list="list" id="dTime" name="dTime">
+        <datalist id="list">
+          <option value="Morning">
+          <option value="Afternoon">
+          <option value="Evening">
+        </datalist>
+        <span class="alert" id="listError"></span>
+
+        <fieldset id="'radioField">
+          <label for="radio">Service Tier</label>
+
+          <label for="radioOption">Tier 1</label>
+          <input type="radio" name="radioOption" id="option1" value="Tier 1">
+
+          <label for="radioOption">Tier 2</label>
+          <input type="radio" name="radioOption" id="option2" value="Tier 2">
+
+          <label for="radioOption">Tier 3</label>
+          <input type="radio" name="radioOption" id="option3" value="Tier 3">
+
+          <span class="alert" id="radioError"></span>
+        </fieldset>
+
+        <label for="checkBox">Agree to to shop</label>
+        <input type="checkbox" name="checkBox" id="checkBox">
+        <span class="alert" id="checkboxError"></span>
+      </fieldset>
+
+      <div class="importantInputs">
+        <label for="total">Total ($CAD):</label>
+        <input type="text" name="total" id="total" class="total" data-total="0" readonly>
+        <input type="submit" value="Submit">
+        <input type="reset">
+      </div>
+    </form>
+  </body>
+</html>

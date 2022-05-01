@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "itemName": "Gundam",
+      "image": "images/img1.jpeg",
+      "price": "20"
+    },
+    {
+      "itemName": "Stitch Jewelry stand",
+      "image": "images/img2.jpeg",
+      "price": "240"
+    },
+    {
+      "itemName": "Destiny Ghost",
+      "image": "images/img3.jpeg",
+      "price": "65"
+    }
+  ]
+}
